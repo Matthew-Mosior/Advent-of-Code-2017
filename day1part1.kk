@@ -55,5 +55,5 @@ pub fun main()
                      chunkedlist.head([]).head(0).single
                     ).single
   val answer      = finallist.samesum
-  println(answer.show)
+  println("The answer to advent of code 2017 day 1, part 1 is: " ++ answer.show)
 //////////////////
