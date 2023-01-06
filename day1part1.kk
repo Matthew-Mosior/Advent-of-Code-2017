@@ -12,7 +12,7 @@ import std/os/path
 fun chunksof ( l : list<a> , c : int ) : div list<list<a>>
   match l
     []  -> []
-    [x] -> []
+    [_] -> []
     xs  -> xs.take(c).single
            ++
            xs.drop(c - 1).chunksof(c)
