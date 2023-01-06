@@ -33,7 +33,7 @@ fun generatecorrectpairs ( lz : list<(int,int)>
                                                  ++
                                                  xs.generatecorrectpairs(v)
                                   Nothing     -> xs.generatecorrectpairs(v)
-                       False -> match v.at(x.fst + lendivtwo - 1)
+                       False -> match v.at((x.fst + lendivtwo) - 1)
                                   Just(value) -> ((x.snd.single ++ value.single).single)
                                                  ++
                                                  xs.generatecorrectpairs(v)
